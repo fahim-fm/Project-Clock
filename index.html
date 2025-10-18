@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Clock & Multi-Alarm App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Digital Clock</h1>
+    <div id="clock">00:00:00</div>
+
+    <h2>Set Alarms</h2>
+    <input type="time" id="alarmTime">
+    <button id="addAlarmBtn">Add Alarm</button>
+
+    <ul id="alarmList"></ul>
+
+    <h2>Stopwatch</h2>
+    <div id="stopwatch">00:00:00</div>
+    <div>
+      <button id="startBtn">Start</button>
+      <button id="pauseBtn">Pause</button>
+      <button id="resetBtn">Reset</button>
+    </div>
+  </div>
+
+  <!-- Alarm Modal -->
+  <div id="alarmModal" class="modal">
+    <div class="modal-content">
+      <h2>⏰ Alarm!</h2>
+      <button id="stopAlarmBtn">Stop</button>
+      <button id="snoozeAlarmBtn">Snooze 5 min</button>
+    </div>
+  </div>
+
+  <!-- Alarm Sound -->
+<audio id="alarmSound" src="https://yourdomain.com/path/to/alarm-sound.mp3" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
